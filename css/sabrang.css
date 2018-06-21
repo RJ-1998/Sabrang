@@ -1,4 +1,4 @@
-.dottext{
+/*.dottext{
  visibility:hidden;
  position:absolute;
  color:white;
@@ -17,6 +17,7 @@ stroke-width:4;
 stroke-miterlimit:10;
 cursor: pointer;
 }
+
 .navigation{
 content:"";
 position:absolute;
@@ -42,7 +43,25 @@ bottom:0;
  cursor:pointer;
  float:left;
  border:none; 
- }
+ }*/
+ 
+ .register_text{
+    position: absolute;
+    top:2%;
+	right:2%;
+	z-index:1;
+	border-style: solid;
+	border-color:rgb(219, 36, 106);
+	border-width:0.5px;
+	border-radius: 20px;
+	padding:10px;
+	background-color: transparent;
+	cursor:pointer;
+	color:white;
+	font-size:18px;
+	text-decoration:none;
+	font-family:'MS Sans Serif';
+	}
 .icons{
  float:right;
  margin-top:15px;
@@ -52,8 +71,8 @@ bottom:0;
  cursor:pointer;
 }
 .icons_div{
-	position:sticky;
-    float:right;
+position:sticky;
+float:right;
  display:inline-block;
  margin-top:200px;
  margin-right:50px;
@@ -89,7 +108,7 @@ bottom:0;
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
+    padding: 0px 15px 0px 15px;
     text-decoration: none;
     font-size: 36px;
     color: #818181;
@@ -101,141 +120,62 @@ bottom:0;
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
-
 /* Position the close button (top left corner) */
-.overlay .closebtn {
+ .overlay .closebtn {
     position: absolute;
-	left:20px;
-	font-size:60px;
+    left:25px;
+    top:250px;
+    font-size:60px;
+    border-style: solid;
+		border-radius: 500px;
+		border-color:rgb(219, 36, 106);
+		border-width: 0.5px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+@media screen and (max-width: 767px) and (orientation:portrait) {
+    .overlay a {
+        font-size: 30px;        
+    }
     .overlay .closebtn {
-        font-size: 40px;
+        font-size: 60px;
         top: 0px;
-		right: 35px;
-		
+		left: 0px;
+        border:none;
+        border-radius:0px;
+        padding:0px;
+        
+    }
+    .overlay-content {
+        display:inline-block;
+        position: relative;
+        top: 25%; /* 25% from the top */
+        left:23%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
 }  
+@media screen and (max-width: 767px) and (orientation:landscape){
+    .overlay .closebtn {
+        font-size: 60px;
+        top: 0px;
+		left: 0px;
+        border:none;
+        border-radius:0px;
+        padding:0px;
+        
+    }
+    .overlay-content {
+        display:inline-block;
+        position: relative;
+        top: 25%; /* 25% from the top */
+        left:33%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+}
 
 /* Change the color of links on hover */
 .navbar a:hover {
     color: white;
 }
-
-
- /*--------------------media queries-------------------------*/
- 
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	.logo_image{
-		width:35%;
-		margin-left:35%;
-		margin-top:50%;
-	}
-	
-	.sabrang_text{
-	display:inline-block;
-	color:white;
-	font-size:24px;
-	margin-left:20%;
-	font-family:Lucida Calligraphy;
-	}
-	
-.menu_icon
-{
-	font-size:20px;
-	color:white;
-	margin-left:25px;
-	margin-top:20px;
-	cursor:pointer;
-}	
-.icons_div{
-display:inline-block;
- margin-left:25%;
- font-size:36px;
-}
-.register_text{
-	visibility:hidden;
-	}
-	.navbar{
-		visibility:hidden;
-	}
-	.myclass{
-	visibility:hidden;}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	body
-            {
-			/*background-image:url("sabrang-background_new.png");*/
-			/*background-image: url("collage.png");*/
-			background-repeat: no-repeat;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-attachment:fixed;
-            }
-	.logo_image{
-		position:fixed;
-		top:150px;
-		left:25%;
-		width:55%;
-	}		
-	.register_text{
-	position: absolute;
-	z-index:1;
-	border-style: solid;
-	border-color:rgb(219, 36, 106);
-	border-width:0.5px;
-	border-radius: 20px;
-	padding:10px;
-	background-color: transparent;
-	top:67%;
-	left:47%;
-	cursor:pointer;
-	color:white;
-	font-size:18px;
-	text-decoration:none;
-	font-family:'MS Sans Serif';
-	}
-	.menu_icon
-{
-	position:absolute;
-	border-style: solid;
-	border-radius: 500px;
-	border-color:rgb(219, 36, 106);
-	border-width: 0.5px;
-	font-size:28px;
-	color:white;
-	left:25px;
-    top:250px;
-	cursor:pointer;
-}
-.navbar a {
-    float:left;
-    display: inline-block;
-	text-align:left;
-    margin-left:16px;
-    text-decoration: none;
-    font-size: 20px;
-	color:#a6a6a6;
-}
-.myclass{
-	display:inline-block;
-	color:white;
-	float:right;
-	font-size:20px;
-	text-align:left;
-	margin-right:2%;
-}
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}

@@ -20,6 +20,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="animate.css"><!-- Animate.css -->
         <link rel="stylesheet" href="css/sabrang.css">
+        <link rel="stylesheet" href="css/media_queries.css">
 
 <!-- Font-Awesome Icons -->		
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,21 +37,14 @@
 
 <body bgcolor="white" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
        <!-- Top navigation -->		
-    <div style="position:fixed;margin:auto;">
-            <div style="display:inline-block" id="slide1">
-                    <img src="images/lowpoly.png" style="width:100%">
+    <div style="height:690px;margin:auto;background-image:url('images/lowpoly.png');background-repeat:round;" class="home_div">
                     <img src="images/Sabrang text.png" class="logo_image"/>
-                    <input type="button" value="Register Now!" class="register_text">
-                      
-                </div>
-                <div style="display:none" id="slide2">
-                    <img src="images/sabrang-background_new.png" style="width:100%">
-                </div>
-        
-        <div style="display:inline-block;" class="menu_icon" id="menu">
-            <i class="fa fa-bars" style="padding:20px" onclick="openNav()"></i>
+                    
+        <div class="menu_icon" id="menu">
+            <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
         </div>
-     <span class="dottext" id="show">Home</span>
+        <input type="button" value="Register Now!" class="register_text">
+     <!--<span class="dottext" id="show">Home</span>
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -6 75 380"
         style="width:3%;float:right;
         position:absolute;
@@ -65,7 +59,7 @@
         <circle class="cls-1" cx="19.96" cy="259.96" r="19.46" id="c4"/>
         <circle class="cls-1" cx="19.96" cy="339.96" r="19.46" id="c5"/>
         </g>
-      </svg>
+      </svg>-->
     </div>	  
   <!-- Sabrang LOGO -->
   <!-- The overlay -->
@@ -80,12 +74,12 @@
     <a href="#">Team Sabrang</a>
 	<a href="#">Contact Us</a>
   </div> 
-  <div class="icons_div"> 
+ <!-- <div class="icons_div"> 
     <a href="#"><i class="fa fa-facebook-official icons"></i></a></br>
     <a href="#"><i class="fa fa-twitter icons"></i></a></br>
     <a href="#"><i class="fa fa-youtube icons"></i></a></br>
     <a href="#"><i class="fa fa-instagram icons"></i></a>  
- </div>
+ </div>-->
  </div>
  <!-- Footer -->
  <!--<div class="footer">
