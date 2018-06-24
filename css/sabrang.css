@@ -26,15 +26,8 @@ width: 100%;
 clear:both;
 display:table;
 z-index:1;
-}
-.footer{
-content:"";
-position:bottom;
-width: 100%;
-clear:both;
-position:fixed;
-bottom:0;
-}
+}*/
+
 .button1{background-color:#a6a6a6;
  color:white;
  padding:10px 10px;
@@ -43,10 +36,10 @@ bottom:0;
  cursor:pointer;
  float:left;
  border:none; 
- }*/
+ }
  
  .register_text{
-    position: absolute;
+    position: fixed;
     top:2%;
 	right:2%;
 	z-index:1;
@@ -62,22 +55,7 @@ bottom:0;
 	text-decoration:none;
 	font-family:'MS Sans Serif';
 	}
-.icons{
- float:right;
- margin-top:15px;
- border-style:none;
- border-radius:5px;
- color:#a6a6a6;
- cursor:pointer;
-}
-.icons_div{
-position:sticky;
-float:right;
- display:inline-block;
- margin-top:200px;
- margin-right:50px;
- font-size:28px;
-}
+
 .icons_div i:hover {
     color: white;
 }
@@ -176,6 +154,26 @@ float:right;
 }
 
 /* Change the color of links on hover */
-.navbar a:hover {
-    color: white;
+
+.footer{
+    content:"";
+    width: 100%;
+    clear:both;
+    background-color: rgb(233, 233, 233);
+   height:350px;
 }
+.icons{
+    float:left;
+    margin-right:13px;
+    border-style:none;
+    border-radius:5px;
+    color:black;
+    cursor:pointer;
+   }
+   .icons_div{
+    position:relative;
+    display:inline-block;
+    top:40%;
+    left:25%;
+    font-size:42px;
+   }

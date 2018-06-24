@@ -33,18 +33,65 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <style>
+        body{
+            background-color: rgb(212, 212, 160);
+        }
+        </style>
     </head>
 
-<body bgcolor="white" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-       <!-- Top navigation -->		
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <!---------------- Home DIV---------------->
     <div style="height:690px;margin:auto;background-image:url('images/lowpoly.png');background-repeat:round;" class="home_div">
-                    <img src="images/Sabrang text.png" class="logo_image"/>
-                    
-        <div class="menu_icon" id="menu">
-            <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
-        </div>
-        <input type="button" value="Register Now!" class="register_text">
-     <!--<span class="dottext" id="show">Home</span>
+        <img src="images/Sabrang text.png" class="logo_image"/>            
+        <a href="register.html"><input type="button" value="Register Now!" class="register_text"></a>
+    </div>	      
+    <!------------------ Menu Icon ---------------->    
+    <div class="menu_icon" id="menu">
+        <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
+    </div>
+  <!------------------- Menu Overlay ---------------->
+ <div id="myNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="#">Competitions</a>
+    <a href="#">Team Sabrang</a>
+	<a href="#">Contact Us</a>
+  </div> 
+ </div>
+
+
+ <!-------------------- Footer -------------------->
+ <!--
+<div class="footer">
+    <div style="background-color:yellow;height:80px;width:100%">
+       <img src="images/newjklulogo.png" width="40%">
+       <!--<img src="images/newsabranglogo.png" width="28%" style="float:right;position:relative;right:20%;top:40px">
+    </div>
+    <div class="icons_div"> 
+      <a href="#"><i class="fa fa-facebook-official icons"></i></a>
+      <a href="#"><i class="fa fa-twitter icons"></i></a>
+      <a href="#"><i class="fa fa-youtube icons"></i></a>
+      <a href="#"><i class="fa fa-instagram icons"></i></a>  
+    </div>
+    <center style="margin-top:60px"><h3>Find Us On</h3></center>
+    <h2>All right reserved</h2>
+</div>-->
+    <!-- GSAP LIBRARIES -->
+ <script src="GSAP\minified\TweenLite.min.js"></script>
+ <script src="GSAP\minified\TimelineLite.min.js"></script>
+ <script src="GSAP\minified\plugins\CSSPlugin.min.js"></script>
+ <script src="GSAP\minified\easing\EasePack.min.js"></script>
+ <script src="js/index.js"></script> 
+</body>
+</html>  
+
+
+<!--<span class="dottext" id="show">Home</span>
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -6 75 380"
         style="width:3%;float:right;
         position:absolute;
@@ -60,47 +107,3 @@
         <circle class="cls-1" cx="19.96" cy="339.96" r="19.46" id="c5"/>
         </g>
       </svg>-->
-    </div>	  
-  <!-- Sabrang LOGO -->
-  <!-- The overlay -->
-  <div id="myNav" class="overlay">
-  <!-- Button to close the overlay navigation -->
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="#">Home</a>
-    <a href="events.html">Events</a>
-    <a href="#">Competitions</a>
-    <a href="#">Team Sabrang</a>
-	<a href="#">Contact Us</a>
-  </div> 
- <!-- <div class="icons_div"> 
-    <a href="#"><i class="fa fa-facebook-official icons"></i></a></br>
-    <a href="#"><i class="fa fa-twitter icons"></i></a></br>
-    <a href="#"><i class="fa fa-youtube icons"></i></a></br>
-    <a href="#"><i class="fa fa-instagram icons"></i></a>  
- </div>-->
- </div>
- <!-- Footer -->
- <!--<div class="footer">
-    <div class="navbar"">
-        <a href="#">About</a>
-        <a href="#">Schedule</a>
-        <a href="#">Sponsers</a>
-        <a href="#">Visit JKLU</a>
-    </div>  
-	<div class="myclass">
-	Made with <i class="fa fa-heart" style="color:red"></i> By Rishabh Jain
-    </div>
-    </div>-->
-
- 
- 
-    <!-- GSAP LIBRARIES -->
- <script src="GSAP\minified\TweenLite.min.js"></script>
- <script src="GSAP\minified\TimelineLite.min.js"></script>
- <script src="GSAP\minified\plugins\CSSPlugin.min.js"></script>
- <script src="GSAP\minified\easing\EasePack.min.js"></script>
- <script src="js/index.js"></script> 
-</body>
-</html>  

@@ -52,7 +52,7 @@ Array.from(inputs).forEach((input)=>{
 const icons = document.querySelectorAll('.icons_div i');
 console.log(icons);
 var tl = new TimelineLite();
-    tl.staggerFrom(icons,0.4,{x:100},0.1);
+    tl.staggerFrom(icons,0.4,{y:100},0.1);
     TweenLite.from(menu,2,{y:-400,ease:Power4.easeOut});
 const img = document.getElementsByClassName("logo_image");
 TweenLite.from(img,1,{y:700,ease:Power3.easeOut});
