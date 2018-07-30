@@ -1,5 +1,6 @@
 //register now button hover effect
 const reg= document.getElementsByClassName("register_text");
+
 reg[0].addEventListener('mouseover',function(e){
     reg[0].style.backgroundColor = "rgb(219, 36, 106)";
 });
@@ -18,41 +19,16 @@ menu.addEventListener("mouseout",function(e){
 });
 //effect ends-----------------------------------------
 //form validation begins
-const patterns = {
-    phone:/^[0-9]{10}$/,
-    fname:/^[a-zA-Z ]+$/,
-	lname:/^[a-zA-Z ]+$/,
-	state:/^[a-zA-Z ]+$/,
-	city:/^[a-zA-Z ]+$/,
-	college_name:/^[a-zA-Z ]+$/,
-	zipcode:/^[0-9]{6}$/,
-	branch:/^[a-zA-Z ]+$/,
-	year:/^[12345](st|nd|rd|th)$/,
-    email:/^[a-zA-Z_0-9]+@(gmail|hotmail|yahoo).(com|in)$/
-};
-function validate(field,regex){
-    if(regex.test(field.value))
-    {
-     field.style.borderBottom = "2px solid green";
-    }
-    else{
-        field.style.borderBottom="2px solid red";
-    }
-}
-const inputs = document.querySelectorAll('input');
-Array.from(inputs).forEach((input)=>{
-    input.addEventListener('keyup',(e)=>{
-        validate(e.target,patterns[e.target.attributes.name.value]);
-    });
-});
+
 //other way to create a Regular Expression//
 //var reg2 = new RegExp(/[a-z]/,'gi');//
 //form validation ends ---------------------------------
 //GSAP animations begins 
-const icons = document.querySelectorAll('.icons_div i');
+/*const icons = document.querySelectorAll('.icons_div i');
 console.log(icons);
 var tl = new TimelineLite();
-    tl.staggerFrom(icons,0.4,{y:100},0.1);
+    tl.staggerFrom(icons,0.4,{y:100},0.1);*/
+    
     TweenLite.from(menu,2,{y:-400,ease:Power4.easeOut});
 const img = document.getElementsByClassName("logo_image");
 TweenLite.from(img,1,{y:700,ease:Power3.easeOut});
@@ -160,8 +136,23 @@ function showslide(n){
 		/* Open when someone clicks on the span element */
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
+            
         }
         /* Close when someone clicks on the "x" symbol inside the overlay */
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
+            
         }
+
+        //------------------------------------------------------------//
+        const scrollDot = document.getElementById('scroll_dot');
+        TweenMax.to(scrollDot , 1 , {y:30,repeat:-1,autoAlpha:0});
+        
+        const li_array = document.querySelectorAll('ul li');
+
+        Array.from(li_array).forEach(function(list){
+           list.addEventListener('mouseover',function(el){
+               el.target.style.boxShadow = "5px 5px 5px rgb(71,71,71)"
+           });
+        });
+        console.log(li_array);

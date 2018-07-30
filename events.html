@@ -15,6 +15,16 @@
         background-repeat:round;
         background-attachment: fixed;
      }
+     .details{
+         text-align: center;
+         font-size:18px;
+         padding:5px;
+         color:white;
+         cursor:pointer;
+         border:none;
+         background-color: transparent;
+         width:100%;
+     }
 </style>
     </head>
    <body>
@@ -39,7 +49,7 @@
 <a href="events.html">Events</a>
 <a href="#">Competitions</a>
 <a href="#">Team Sabrang</a>
-<a href="#">Contact Us</a>
+<a href="contact.html">Contact Us</a>
 </div> 
 </div>
 
@@ -58,7 +68,31 @@
                Eos reiciendis harum quos.
                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
-            <input type="button" value="Register Now" class="register_button">
+            <button type="button" class="details" id="id1">View details</button>
+            <div style="display:none">
+                <div>
+                        <img src="images/lowpoly_rotate.png" width="90%" height="100%">
+                </div>
+                <div>
+                <p>
+                    RULES</br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Exercitationem, temporibus? Error, 
+                tempore nobis excepturi placeat quaerat hic deserunt 
+                voluptatum quod laudantium enim, architecto pariatur 
+                facere rerum eius accusamus iste magnam?
+               </p>
+                <ul>
+                    <li>hdddn</li>
+                    <li>jndsnks</li>
+                    <li>sbdsnjsn</li>
+                </ul>    
+                <button type="button" class="button2">Register Now</button>
+                <button  id="id4" type="button" 
+                onclick="document.getElementById('id2').style.display = 'none' " 
+                class="button2">Cancel</button></div>
+             </div>
+           <button type="button" class="register_button">Register Now</button>
        </div>
        
        <div class="event_card wow fadeInUp">
@@ -75,6 +109,30 @@
                Eos reiciendis harum quos.
                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
+            <button type="button" class="details" id="id1">View details</button>
+            <div style="display:none">
+                    <div>
+                            <img src="images/fashion.JPG" width="90%" height="100%">
+                    </div>
+                    <div>
+                    <p>
+                        RULES</br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Exercitationem, temporibus? Error, 
+                    tempore nobis excepturi placeat quaerat hic deserunt 
+                    voluptatum quod laudantium enim, architecto pariatur 
+                    facere rerum eius accusamus iste magnam?
+                   </p>
+                    <ul>
+                        <li>hdddn</li>
+                        <li>jndsnks</li>
+                        <li>sbdsnjsn</li>
+                    </ul>    
+                    <button type="button" class="button2">Register Now</button>
+                    <button  id="id4" type="button" 
+                    onclick="document.getElementById('id2').style.display = 'none' " 
+                    class="button2">Cancel</button></div>
+                 </div>
             <input type="button" value="Register Now" class="register_button">
        </div>
        
@@ -92,6 +150,7 @@
                 Eos reiciendis harum quos.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
              </div>
+             <button type="button" class="details">View details</button>
              <input type="button" value="Register Now" class="register_button">
         </div>
         
@@ -109,6 +168,7 @@
                     Eos reiciendis harum quos.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                  </div>
+                 <button type="button" class="details">View details</button>
                  <input type="button" value="Register Now" class="register_button">
             </div>
     </div>
@@ -127,6 +187,7 @@
                     Eos reiciendis harum quos.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                  </div>
+                 <button type="button" class="details">View details</button>
                  <input type="button" value="Register Now" class="register_button">
             </div>
             <div class="event_card wow fadeInUp">
@@ -143,6 +204,7 @@
                     Eos reiciendis harum quos.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                  </div>
+                 <button type="button" class="details">View details</button>
                  <input type="button" value="Register Now" class="register_button">
             </div>
             <div class="event_card wow fadeInUp">
@@ -159,6 +221,7 @@
                      Eos reiciendis harum quos.
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                   </div>
+                  <button type="button" class="details">View details</button>
                   <input type="button" value="Register Now" class="register_button">
              </div>
              <div class="event_card wow fadeInUp">
@@ -175,13 +238,34 @@
                          Eos reiciendis harum quos.
                          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       </div>
+                      <button type="button" class="details">View details</button>
                       <input type="button" value="Register Now" class="register_button">
                  </div>
          </div>
+
+        <div id="id2" class="modal">
+           <div id="id5" class="split left" style="margin-left:20%;width:30%"></div>
+           <div id="id3" class="split right" style="margin-right:14%;width:40%">ff</div>
+        </div>
+
    </body> 
    <script src="js/wow.min.js"></script>
    <script>
    new WOW().init();
    </script>
    <script src="js/index.js"></script>
+   <script>
+   const details = document.querySelectorAll('#id1');
+   const div2 = document.querySelector('#id2');
+   const div3 = document.querySelector('#id3');
+   const div5 = document.querySelector('#id5');
+   console.log(details);
+   Array.from(details).forEach(function(details){
+       details.addEventListener('click',function(el){
+           div5.innerHTML = el.target.nextElementSibling.firstElementChild.innerHTML;
+           div3.innerHTML=el.target.nextElementSibling.lastElementChild.innerHTML;
+           div2.style.display = "inline-block";
+       });
+   });
+   </script>
 </html>

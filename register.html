@@ -46,17 +46,58 @@
         <a href="events.html">Events</a>
         <a href="#">Competitions</a>
         <a href="#">Team Sabrang</a>
-        <a href="#">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
       </div> 
      </div>
         <div class="div1">
          <form>
              <center style="color:white;font-size:20px;margin-bottom:20px;">Register Yourself</center>
-            <input type="text" placeholder="Name" name="name" class="textfield">
+            <!--TODO styling of event list -->
+             <!--<input type="text" placeholder="Event Name" name="event" class="textfield">-->
+            <select name="event">
+                <option value="Aaja_Nachle">Aaja Nachle</option>
+                <option value="Aaroh_avroh">Aaroh Avroh</option>
+                <option value="Band_jam">Band Jam</option>
+                <option value="Beat_boxing">Beat Boxing</option>
+                <option value="Block_beast">Block Beast</option>
+                <option value="Body_art">Body Art</option>
+                <option value="Bridge_design">Bridge Design</option>
+                <option value="Bulls_and_bear">Bulls & Bear</option>
+                <option value="C_debugging">C Debugging</option>
+                <option value="Fashion_show">Fasion Show</option>
+                <option value="Java_debugging">Java Debugging</option>
+                <option value="junkyard">Junkyard</option>
+                <option value="Model_presentation">Model Presentation</option>
+                <option value="Poetry">Poetry</option>
+                <option value="Pratiroop">Pratiroop</option>
+                <option value="Pratibha">Pratibha</option>
+                <option value="Rangmanch">Rangmanch</option>
+                <option value="Rangoli">Rangoli</option>
+                <option value="Rap_war">Rap War</option>
+                <option value="Treasure Hunt">Treasure Hunt</option>
+            </select>
+            <!-- TODO Styling of radio buttons--></br>
+            <input type="radio" name="category" value="solo" checked id="category">Solo
+            <input type="radio" name="category" value="duet" id="category">Duet
+            <input type="radio" name="category" value="team" id="category">Team
+
+            <input type="number" placeholder="Number of Teammates(including team leader)" name="teammates" class="textfield" style="display:none" id="teammates">
+            <input type="number" placeholder="Name of Your Team(if any)" name="teamname" class="textfield" style="display:none" id="teamname">
+
+            <input type="text" placeholder="Name" name="name" class="textfield" id="leader">
             <input type="text" placeholder="College" name="college" class="textfield">
             <input type="email" placeholder="Email" name="email" class="textfield">
-            <input type="tel" placeholder="Phone" name="phone" class="textfield">
-            <input type="text" placeholder="Event Name" name="event" class="textfield">
+            <input type="tel" placeholder="First Phone Number" name="phone1" class="textfield">
+            <input type="tel" placeholder="Second Phone Number" name="phone2" class="textfield">
+            <!-- TODO styleing of Hospitality -->
+            </br>
+            <label>Hospitality</label>
+            </br>
+            <input type="radio" name="hospitality" value="yes" id="hospitality">Yes
+            <input type="radio" name="hospitality" value="no" id="hospitality" checked>No 
+            </br>
+            <input type="number" placeholder="Number of participants" name="hospitality" class="textfield" style="display:none;" id="hospitality_info">
+            <input type="tel" placeholder="Conatct Number" name="contact" class="textfield" style="display:none;" id="hospitality_info">
             <input type="submit" value="REGISTER" name="register" class="submitButton">
             </br>
             <center style="margin-top:20px;color:white;font-size:14px">
@@ -65,6 +106,6 @@
             </center>
          </form>
         </div>
-        <script src="js/index.js"></script> 
+        <script src="js/register.js"></script> 
     </body>
 </html>

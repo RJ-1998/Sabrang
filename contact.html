@@ -2,15 +2,41 @@
     <head>
         <title>Contact Us</title>
         <link rel="stylesheet" href="css/media_queries.css">
-
+        <link rel="stylesheet" href="css/sabrang.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+    <body style="background-image: url('images/lowpoly.png')">
         <div>
-            <img src="images/newsabranglogo.png" class="logo_size">
-            <div style="display:inline-block;font-size:48px;position:absolute;top:30px;left:150px">
+            <a href="index.html"><img src="images/newsabranglogo.png" class="logo_size"></a>
+            <div style="display:inline-block;font-size:36px;position:absolute;top:1%;left:50px">
                 Contact Us
             </div>
         </div>
+        <!------------------ Menu Icon ---------------->    
+    <div class="menu_icon" id="menu">
+        <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
+    </div>
+    <!------------------- Menu Overlay ---------------->
+    <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <!-- Overlay content -->
+    <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="#">Competitions</a>
+    <a href="#">Team Sabrang</a>
+    <a href="contact.html">Contact Us</a>
+    </div> 
+    </div>
+
+     <div style="display:inline-block;box-shadow: 4px 4px 4px rgb(86, 87, 86);width:60%;background-color: white;color:black;position:relative;left:20%;top:160px;">
+        <h1 style="text-align: center">Contact US</h1>
         
+     </div>
+
     </body>
+    <script src="js/index.js"></script>
+
 </html>
