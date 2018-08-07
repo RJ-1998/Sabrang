@@ -70,5 +70,5 @@ Array.from(category).forEach(function(radio){
             teamname.style.display= "inline";
             leader.attributes.placeholder.value="Name of Leader";
         }
-    })
-})
+    });
+});

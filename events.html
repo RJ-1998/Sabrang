@@ -1,7 +1,7 @@
 <html>
     <head>
 <title> Events|Sabrang|JKLU</title>
-<link rel="stylesheet" href="animate.css">        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">       
 <link rel="stylesheet" href="css/events.css">
 <link rel="stylesheet" href="css/media_queries.css">
 <link rel="stylesheet" href="css/sabrang.css">
@@ -11,7 +11,7 @@
 <style>
      body{
         
-        background-image: url('images/lowpoly.png');
+        background-image: url('images/lowpoly.jpg');
         background-repeat:round;
         background-attachment: fixed;
      }
@@ -23,9 +23,12 @@
          cursor:pointer;
          border:none;
          background-color: transparent;
-         width:100%;
      }
 </style>
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        </style> 
     </head>
    <body>
         <div style="float:left;">
@@ -37,86 +40,54 @@
 
 <!------------------ Menu Icon ---------------->    
 <div class="menu_icon" id="menu">
-    <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#fff"/>
+        </svg>
 </div>
 <!------------------- Menu Overlay ---------------->
 <div id="myNav" class="overlay">
 <!-- Button to close the overlay navigation -->
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <!-- Overlay content -->
-<div class="overlay-content">
-<a href="index.html">Home</a>
-<a href="events.html">Events</a>
-<a href="#">Competitions</a>
-<a href="#">Team Sabrang</a>
-<a href="contact.html">Contact Us</a>
-</div> 
+<div>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="#">Competitions</a>
+          <a href="#">Team Sabrang</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div style="display:inline-block;position:absolute;float:left;bottom:0px;left:10px">
+              <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-instagram "></i></button></a>
+         <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-youtube"></i></button></a>
+         <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-twitter"></i></button></a>
+         <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-facebook"></i></button></a>
+         <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-linkedin"></i></button></a>
+        </div>
+      </div> 
 </div>
 
-    <!--<div style="position:relative;display:inline-block;margin-top:50px;margin-bottom:150px;margin-left:80px">-->
        <div class="event_card wow fadeInUp">
-           <div>
-               <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-               <center><h2 class="card_heading">SwarBandish</h2></center>
-            <center><h3>Musical Night</h3></center>
-           </div>
-           <div style="text-align:center">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Sequi pariatur itaque corporis, 
-               sunt earum blanditiis commodi fuga unde minima, 
-               perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-               Eos reiciendis harum quos.
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </div>
+        <img src="images/fashion.JPG" width="100%" height="100%">
+        <div style="padding:10px;text-align:justify;color:white;position:absolute;bottom:0px;">
+            <h1 style="display:inline;padding:8px;">
+                Fashion Show
+            </h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis. 
+                Quae saepe dolore earum consequatur iusto ipsum porro, 
+                unde natus adipisci quia tempora architecto, maiores quos omnis blanditiis sed modi.
+            </p>
+            <button type="button" class="button2">Register Now!</button>
             <button type="button" class="details" id="id1">View details</button>
             <div style="display:none">
                 <div>
-                        <img src="images/lowpoly_rotate.png" width="90%" height="100%">
+                 <img src="images/lowpoly_rotate.png" width="90%" height="100%">
                 </div>
                 <div>
-                <p>
-                    RULES</br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Exercitationem, temporibus? Error, 
-                tempore nobis excepturi placeat quaerat hic deserunt 
-                voluptatum quod laudantium enim, architecto pariatur 
-                facere rerum eius accusamus iste magnam?
-               </p>
-                <ul>
-                    <li>hdddn</li>
-                    <li>jndsnks</li>
-                    <li>sbdsnjsn</li>
-                </ul>    
-                <button type="button" class="button2">Register Now</button>
-                <button  id="id4" type="button" 
-                onclick="document.getElementById('id2').style.display = 'none' " 
-                class="button2">Cancel</button></div>
-             </div>
-           <button type="button" class="register_button">Register Now</button>
-       </div>
-       
-       <div class="event_card wow fadeInUp">
-           <div>
-               <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-               <center><h2 class="card_heading">SwarBandish</h2></center>
-            <center><h3>Musical Night</h3></center>
-           </div>
-           <div style="text-align:center">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-               Sequi pariatur itaque corporis, 
-               sunt earum blanditiis commodi fuga unde minima, 
-               perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-               Eos reiciendis harum quos.
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </div>
-            <button type="button" class="details" id="id1">View details</button>
-            <div style="display:none">
-                    <div>
-                            <img src="images/fashion.JPG" width="90%" height="100%">
-                    </div>
-                    <div>
                     <p>
-                        RULES</br>
+                        RULES<br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Exercitationem, temporibus? Error, 
                     tempore nobis excepturi placeat quaerat hic deserunt 
@@ -131,129 +102,107 @@
                     <button type="button" class="button2">Register Now</button>
                     <button  id="id4" type="button" 
                     onclick="document.getElementById('id2').style.display = 'none' " 
-                    class="button2">Cancel</button></div>
-                 </div>
-            <input type="button" value="Register Now" class="register_button">
+                    class="button2">Cancel</button>
+                </div>
+                </div>
+            </div>     
        </div>
-       
+
        <div class="event_card wow fadeInUp">
-            <div>
-                <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-                <center><h2 class="card_heading">SwarBandish</h2></center>
-             <center><h3>Musical Night</h3></center>
-            </div>
-            <div style="text-align:center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sequi pariatur itaque corporis, 
-                sunt earum blanditiis commodi fuga unde minima, 
-                perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-                Eos reiciendis harum quos.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-             </div>
-             <button type="button" class="details">View details</button>
-             <input type="button" value="Register Now" class="register_button">
-        </div>
-        
-        <div class="event_card wow fadeInUp">
+        <img src="images/fashion.JPG" width="100%" height="100%">
+        <div style="padding:10px;text-align:justify;color:white;position:absolute;bottom:0px;">
+            <h1 style="display:inline;padding:8px;">
+                Fashion Show
+            </h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis. 
+                Quae saepe dolore earum consequatur iusto ipsum porro, 
+                unde natus adipisci quia tempora architecto, maiores quos omnis blanditiis sed modi.
+            </p>
+            <button type="button" class="button2">Register Now!</button>
+            <button type="button" class="details" id="id1">View details</button>
+            <div style="display:none">
                 <div>
-                    <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-                    <center><h2 class="card_heading">SwarBandish</h2></center>
-                 <center><h3>Musical Night</h3></center>
+                 <img src="images/lowpoly_rotate.png" width="90%" height="100%">
                 </div>
-                <div style="text-align:center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi pariatur itaque corporis, 
-                    sunt earum blanditiis commodi fuga unde minima, 
-                    perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-                    Eos reiciendis harum quos.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                 </div>
-                 <button type="button" class="details">View details</button>
-                 <input type="button" value="Register Now" class="register_button">
-            </div>
-    </div>
-    <!--<div style="display:inline-block;margin-top:50px;margin-left:80px">-->
-            <div class="event_card wow fadeInUp">
                 <div>
-                    <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-                    <center><h2 class="card_heading">SwarBandish</h2></center>
-                 <center><h3>Musical Night</h3></center>
+                    <p>
+                        RULES<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Exercitationem, temporibus? Error, 
+                    tempore nobis excepturi placeat quaerat hic deserunt 
+                    voluptatum quod laudantium enim, architecto pariatur 
+                    facere rerum eius accusamus iste magnam?
+                   </p>
+                    <ul>
+                        <li>hdddn</li>
+                        <li>jndsnks</li>
+                        <li>sbdsnjsn</li>
+                    </ul>    
+                    <button type="button" class="button2">Register Now</button>
+                    <button  id="id4" type="button" 
+                    onclick="document.getElementById('id2').style.display = 'none' " 
+                    class="button2">Cancel</button>
                 </div>
-                <div style="text-align:center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi pariatur itaque corporis, 
-                    sunt earum blanditiis commodi fuga unde minima, 
-                    perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-                    Eos reiciendis harum quos.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                 </div>
-                 <button type="button" class="details">View details</button>
-                 <input type="button" value="Register Now" class="register_button">
-            </div>
-            <div class="event_card wow fadeInUp">
+                </div>
+            </div>     
+       </div>
+
+       <div class="event_card wow fadeInUp">
+        <img src="images/fashion.JPG" width="100%" height="100%">
+        <div style="padding:10px;text-align:justify;color:white;position:absolute;bottom:0px;">
+            <h1 style="display:inline;padding:8px;">
+                Fashion Show
+            </h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis. 
+                Quae saepe dolore earum consequatur iusto ipsum porro, 
+                unde natus adipisci quia tempora architecto, maiores quos omnis blanditiis sed modi.
+            </p>
+            <button type="button" class="button2">Register Now!</button>
+            <button type="button" class="details" id="id1">View details</button>
+            <div style="display:none">
                 <div>
-                    <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-                    <center><h2 class="card_heading">SwarBandish</h2></center>
-                 <center><h3>Musical Night</h3></center>
+                 <img src="images/lowpoly_rotate.png" width="90%" height="100%">
                 </div>
-                <div style="text-align:center">
+                <div>
+                    <p>
+                        RULES<br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi pariatur itaque corporis, 
-                    sunt earum blanditiis commodi fuga unde minima, 
-                    perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-                    Eos reiciendis harum quos.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                 </div>
-                 <button type="button" class="details">View details</button>
-                 <input type="button" value="Register Now" class="register_button">
-            </div>
-            <div class="event_card wow fadeInUp">
-                 <div>
-                     <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-                     <center><h2 class="card_heading">SwarBandish</h2></center>
-                  <center><h3>Musical Night</h3></center>
-                 </div>
-                 <div style="text-align:center">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                     Sequi pariatur itaque corporis, 
-                     sunt earum blanditiis commodi fuga unde minima, 
-                     perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-                     Eos reiciendis harum quos.
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  </div>
-                  <button type="button" class="details">View details</button>
-                  <input type="button" value="Register Now" class="register_button">
-             </div>
-             <div class="event_card wow fadeInUp">
-                     <div>
-                         <img src="images/sabrang-background_new.png" width="100%" style="border-radius:10px;">
-                         <center><h2 class="card_heading">SwarBandish</h2></center>
-                      <center><h3>Musical Night</h3></center>
-                     </div>
-                     <div style="text-align:center">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                         Sequi pariatur itaque corporis, 
-                         sunt earum blanditiis commodi fuga unde minima, 
-                         perspiciatis nam voluptas aspernatur ullam numquam veritatis. 
-                         Eos reiciendis harum quos.
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                      </div>
-                      <button type="button" class="details">View details</button>
-                      <input type="button" value="Register Now" class="register_button">
-                 </div>
-         </div>
+                    Exercitationem, temporibus? Error, 
+                    tempore nobis excepturi placeat quaerat hic deserunt 
+                    voluptatum quod laudantium enim, architecto pariatur 
+                    facere rerum eius accusamus iste magnam?
+                   </p>
+                    <ul>
+                        <li>hdddn</li>
+                        <li>jndsnks</li>
+                        <li>sbdsnjsn</li>
+                    </ul>    
+                    <button type="button" class="button2">Register Now</button>
+                    <button  id="id4" type="button" 
+                    onclick="document.getElementById('id2').style.display = 'none' " 
+                    class="button2">Cancel</button>
+                </div>
+                </div>
+            </div>     
+       </div>
+
 
         <div id="id2" class="modal">
            <div id="id5" class="split left" style="margin-left:20%;width:30%"></div>
            <div id="id3" class="split right" style="margin-right:14%;width:40%">ff</div>
         </div>
-
+        <script src="GSAP\minified\TweenLite.min.js"></script>
+        <script src="GSAP\minified\TweenMax.min.js"></script>
+        <script src="GSAP\minified\TimelineMax.min.js"></script>
+        <script src="js/index.js"></script>
    </body> 
-   <script src="js/wow.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
    <script>
    new WOW().init();
    </script>
-   <script src="js/index.js"></script>
+   
    <script>
    const details = document.querySelectorAll('#id1');
    const div2 = document.querySelector('#id2');
@@ -268,4 +217,5 @@
        });
    });
    </script>
+    
 </html>

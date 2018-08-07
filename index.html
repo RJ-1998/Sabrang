@@ -18,7 +18,7 @@
         
 <!-- Stylesheets -->	
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="animate.css"><!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="css/sabrang.css">
         <link rel="stylesheet" href="css/media_queries.css">
         <link rel="stylesheet" href="css/carousel.css">
@@ -35,15 +35,18 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
-       
+       <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        </style> 
     </head>
 
-<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:rgb(228, 228, 228)">
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-image:url('images/crowd-100.jpg');height:100%;width:100%;">
     <!---------------- Home DIV---------------->
-    <div style="height:700px;margin:auto;background-image:url('images/lowpoly.png');background-repeat:round" class="home_div">
+    <div id="home_window" style="margin:auto;background-image:url('images/lowpoly.jpg');background-repeat:round" class="home_div">
         <div id="particles-js"></div>
         <img src="images/sabrangtextfinal.png" class="logo_image"/>            
-        <a href="register.html"><input type="button" value="Register Now!" class="register_text"></a>
+        <a href="register.html"><input type="button" value="Register Now!" class="register_text animated pulse infinite delay-6s"></a>
         <div style="width:100%;position:absolute;top:80%;">
         <center><svg viewBox="0 0 49 87" id="scroll_down_button" class="scroll_icon">
             <defs><style>.cls-1{fill:#fff}</style></defs>
@@ -53,33 +56,47 @@
             <circle id="scroll_dot" class="cls-1" cx="24.5" cy="27" r="5"/></g></svg></center>    
             <center style="color:white;margin-top:2%;">SCROLL DOWN</center>
         </div>
-    </div>	      
-    <!------------------ Menu Icon ---------------->    
+
+         <!------------------ Menu Icon ---------------->    
     <div class="menu_icon" id="menu">
-        <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
-    </div>
-  <!------------------- Menu Overlay ---------------->
- <div id="myNav" class="overlay">
-  <!-- Button to close the overlay navigation -->
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="index.html">Home</a>
-    <a href="events.html">Events</a>
-    <a href="#">Competitions</a>
-    <a href="#">Team Sabrang</a>
-	<a href="contact.html">Contact Us</a>
-  </div> 
- </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#fff"/>
+            </svg>
+        </div>
+      <!------------------- Menu Overlay ---------------->
+     <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="#">Competitions</a>
+        <a href="#">Team Sabrang</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div style="display:inline-block;position:absolute;float:left;bottom:0px;left:10px">
+            <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-instagram "></i></button></a>
+       <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-youtube"></i></button></a>
+       <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-twitter"></i></button></a>
+       <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-facebook"></i></button></a>
+       <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-linkedin"></i></button></a>
+      </div>
+    </div> 
+     </div>
 
-<!-- ABOUT SABRANG 2018 STARTS HERE -->
+    </div>	     
+  
 
-<div class="about_parent">
-        <div class="about">
-                <h1>
+<!--===================== ABOUT SABRANG 2018 STARTS HERE ======================-->
+<div class="about_parent" id="about_window">
+        <div class="about wow slideInLeft">
+                <h1 style="color:#01b478;font-family: 'Montserrat';">
                     ABOUT SABRANG
                 </h1>
-    <div>
+    <div style="font-family:'Open Sans'">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
              Nemo, repellat error, dolores expedita molestias officiis 
              quae facilis suscipit excepturi in quia quis rerum ducimus 
@@ -96,27 +113,27 @@
         <a href="register.html" style="text-decoration: none;">
             <input type="button" value="Register Now!"
              style="margin-top:5%;padding:0.5em;
-             cursor:pointer;font-size:1.5em;border-style:none;
-             color:white;background-color:rgb(6, 143, 97)">
+             cursor:pointer;font-size:1.5em;border-style:none;font-family:'Montserrat';
+             color:white;background-color:rgb(6, 143, 97);
+             box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;">
         </a>
         </div>
-        <div class="about_pics_div">
+        
+        <div class="about_pics_div wow slideInRight">
             <img src="images/photo2.JPG" width="50%" style="position:absolute;" id="about_photo"/>
             <img src="images/photo3.JPG" width="50%" style="position:absolute;top:40px;" id="about_photo"/>
                 <img src="images/photo1.JPG" width="30%" style="position:relative;left:10%;" id="about_photo"/>
          </div>
 </div>
+<!--=========================== ABOUT SABRANG 2018 ENDS HERE ======================-->
 
-<!-- ABOUT SABRANG 2018 ENDS HERE -->
-
- <!-- VIDEO THROWBACK STARTS HERE -->
-
+ <!--========================= VIDEO THROWBACK STARTS HERE ========================-->
  <div class="throwback_parent">
-     <div class="throwback">
-         <h1>
+     <div class="throwback wow slideInLeft">
+         <h1 style="color:#f46022;font-family: 'Montserrat'">
              AFTERMOVIE
          </h1>
-         <div>
+         <div style="font-family: 'Open Sans'">
              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Nemo, repellat error, dolores expedita molestias officiis 
               quae facilis suscipit excepturi in quia quis rerum ducimus 
@@ -129,28 +146,33 @@
               Nemo, repellat error, dolores expedita molestias officiis 
               quae facilis suscipit excepturi in quia quis rerum ducimus 
               commodi sit laborum, blanditiis sed ex?
-         </div>
+              <div style="margin-top:20px" id="aftermovie_button">
+              <a href="https://www.youtube.com/embed/C6jPgB36Jek" style="text-decoration: none;">
+                    <input type="button" value="Watch Aftermovie"
+                     style="padding:10px;cursor:pointer;font-size:1.5em;border-style:none;color:white;background-color:rgb(6, 143, 97)"></a>
+                    </div>          
+        </div>
      </div>
-     <div style="display:inline-block;position:relative;left:1%;">
-            <div id="aftermovie_video"><iframe width="624" height="328" 
+     <div class="wow slideInRight" style="display:inline-block;position:relative;left:2%;box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.4) !important;">
+            <div id="aftermovie_video"><iframe width="624" height="352" 
             src="https://www.youtube.com/embed/C6jPgB36Jek" 
             frameborder="0" allow="autoplay; encrypted-media" 
-            allowfullscreen ></iframe></div>
-
-            <a href="https://www.youtube.com/embed/C6jPgB36Jek" 
-            style="text-decoration: none;">
-                    <input type="button" id="aftermovie_button" value="Watch Aftermovie"
-                     style="margin-top:5%;margin-bottom:10%;margin-left:5%;padding:0.5em;
-                     cursor:pointer;font-size:1.5em;border-style:none;
-                     color:white;background-color:rgb(6, 143, 97)">
-            
+            allowfullscreen ></iframe>
+            </div>
      </div>
  </div>
 
  <!-- VIDEO THROWBACK ENDS HERE  -->
 
 <!----------IMAGE CAROUSEL STARTS HERE-------------->
-
+<div style="margin-top:80px;margin-bottom:80px;color:white;padding:20px;background-color:rgba(0,0,0,0.4);">
+    <center>
+        <h1 style="font-family: 'Montserrat'">LookBack</h1>
+        <p style="font-family:'Open Sans'"><h3>
+            Get a glimpse of beauty and fun at #Sabrang2k18.</h3>
+        </p>
+    </center>
+</div>
 <div id="carousel">
 
         <div class="hideLeft" id="carousel_div">
@@ -186,95 +208,63 @@
         <button id="next">Next</button>
       </div>-->
      </div>
+     <!--
      <div style="margin:20px;">
          <center>
         <a id="prev">&#10094;</a>
         <a id="next">&#10095;</a></center>
-     </div>
+     </div>-->
  <!---------------IMAGE CAROUSEL ENDS HERE---------------------->
 
  <!-------------------- Footer -------------------->
  
 <div class="footer">
-    <div style="position:relative;display:inline-block;float:left;width:50%;padding-bottom:10px;top:50%;"> 
-        <center style="color:white;font-size:24px;margin-bottom:100px;">LINKS</center>
-    <ul style="list-style-type: none">
-        <li><a href="#" class="links">HOME</a></li>
-        <li><a href="#" class="links">ABOUT</a></li>
-        <li><a href="#" class="links">EVENTS</a></li>
-        <li><a href="#" class="links">SCHEDULE</a></li>
-        <li><a href="#" class="links">CONTACT</a></li>
-    </ul>
+    <div style="color:white;">
+        <p class="wow slideInLeft" style="float:left;text-align: justify;width:30%;margin:30px;background-color:rgba(0, 0, 0, 0.4);padding:50px;font-family: 'Open Sans'"">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nemo, repellat error, dolores expedita molestias officiis 
+                quae facilis suscipit excepturi in quia quis rerum ducimus 
+                commodi sit laborum, blanditiis sed ex?
+               
+        </p>
+        <img src="images/newsabranglogo.png" width="10%" style="float:left;margin:30px;" class="wow zoomIn"/>
+        <p class="wow slideInRight" style="float:left;text-align: justify;width:30%;margin:30px;font-family: 'Open Sans';background-color:rgba(0, 0, 0, 0.4);padding:50px;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nemo, repellat error, dolores expedita molestias officiis 
+                quae facilis suscipit excepturi in quia quis rerum ducimus 
+                commodi sit laborum, blanditiis sed ex?
+        </p>
     </div>
-    <div style="position:relative;display:inline-block;float:left;width:50%;top:50%;padding-bottom:10px;"> 
-            <center style="color:white;font-size:24px;margin-bottom:100px;">SOCIAL</center>
-            <ul style="list-style-type: none">
-                   <li><a href="#" style="font-size:25px"><i class="fa fa-instagram icons"></i></a></li>
-                   <li><a href="#" style="font-size:25px"><i class="fa fa-youtube icons"></i></a></li>
-                   <li><a href="#" style="font-size:25px"><i class="fa fa-twitter icons"></i></a></li>
-                   <li><a href="#" style="font-size:25px"><i class="fa fa-facebook icons"></i></a></li>
-                   <li><a href="#" style="font-size:25px"><i class="fa fa-linkedin icons"></i></a></li>
-                </ul>
-        </div>
+    <div id="footer-links"> 
+        <a href="#" class="links"><input type="button" value="HOME" class="footer_button"></a>
+        <a href="#"><button type="button" class="icons"><i class="fa fa-instagram "></i></button></a>
+        <a href="#" class="links"><input type="button" value="ABOUT" class="footer_button"></a>
+        <a href="#"><button type="button" class="icons"><i class="fa fa-youtube"></i></button></a>
+        <a href="#" class="links"><input type="button" value="EVENTS" class="footer_button"></a>
+        <a href="#"><button type="button" class="icons"><i class="fa fa-twitter"></i></button></a>
+        <a href="#" class="links"><input type="button" value="SCHEDULE" class="footer_button"></a>
+        <a href="#"><button type="button" class="icons"><i class="fa fa-facebook"></i></button></a>
+        <a href="#" class="links"><input type="button" value="CONTACT" class="footer_button"></a>
+       <a href="#"><button type="button" class="icons"><i class="fa fa-linkedin"></i></button></a>
+    </div>
 </div>
 
     <!-- GSAP LIBRARIES -->
- <script src="GSAP\minified\TweenLite.min.js"></script>
- <script src="GSAP\minified\TweenMax.min.js"></script>
- <script src="GSAP\minified\TimelineLite.min.js"></script>
- <script src="GSAP\minified\plugins\CSSPlugin.min.js"></script>
- <script src="GSAP\minified\easing\EasePack.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
  <script src="js/carousel.js"></script>
  <script src="js/index.js"></script> 
 
- <!-- Particle js -->
+<!--Partice.js-->
  <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    
-    
-    <script>
-      var count_particles, stats, update;
-      stats = new Stats;
-      stats.setMode(0);
-      stats.domElement.style.position = 'absolute';
-      stats.domElement.style.left = '0px';
-      stats.domElement.style.top = '0px';
-      document.body.appendChild(stats.domElement);
-      count_particles = document.querySelector('.js-count-particles');
-      update = function() {
-        stats.begin();
-        stats.end();
-        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-      };
-      requestAnimationFrame(update);
-    </script>
-
+<!--WOW.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>  
-
-
-<!--<span class="dottext" id="show">Home</span>
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -6 75 380"
-        style="width:3%;float:right;
-        position:absolute;
-        top:180px;
-        right:50px;
-        height:30%;"
-        xml:space="preserve">
-        <g id="circles" data-name="Layer 2">
-        <circle class="cls-1" cx="19.96" cy="19.96" r="19.46" id="c1" style="fill:white;"/>
-        <circle class="cls-1" cx="19.96" cy="99.96" r="19.46" id="c2"/>
-        <circle class="cls-1" cx="19.96" cy="179.96" r="19.46" id="c3"/>
-        <circle class="cls-1" cx="19.96" cy="259.96" r="19.46" id="c4"/>
-        <circle class="cls-1" cx="19.96" cy="339.96" r="19.46" id="c5"/>
-        </g>
-      </svg>-->
-
-
-
-    
-    

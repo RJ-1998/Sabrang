@@ -39,16 +39,14 @@ z-index:1;
  }
  
  .register_text{
-    position: fixed;
+    position: absolute;
     top:2%;
 	right:2%;
 	z-index:1;
-	border-style: solid;
-	border-color:rgb(219, 36, 106);
-	border-width:0.5px;
-	border-radius: 20px;
+    border-style: none;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 	padding:10px;
-	background-color: transparent;
+	background-color:rgb(219, 36, 106);
 	cursor:pointer;
 	color:white;
 	font-size:18px;
@@ -69,7 +67,6 @@ z-index:1;
     left: 0;
     top: 0;
     background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -77,37 +74,38 @@ z-index:1;
 /* Position the content inside the overlay */
 .overlay-content {
 	display:inline-block;
-    position: relative;
-    top: 25%; /* 25% from the top */
-    left:40%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    position: absolute;
+    top: 15%; /* 25% from the top */
+    left:25%; /* 100% width */
+    text-align: left; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Montserrat';
+    font-weight: 900;
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
     padding: 0px 15px 0px 15px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 70px;
+    color: white;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
-
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: rgb(219, 36, 106);
 }
+
 /* Position the close button (top left corner) */
  .overlay .closebtn {
     position: absolute;
     left:25px;
     top:250px;
-    font-size:60px;
-    border-style: solid;
-		border-radius: 500px;
-		border-color:rgb(219, 36, 106);
-		border-width: 0.5px;
+    font-size:80px;
+}
+.overlay-icons:hover{
+    color:white;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -129,7 +127,7 @@ z-index:1;
         position: relative;
         top: 25%; /* 25% from the top */
         left:23%; /* 100% width */
-        text-align: center; /* Centered text/links */
+        text-align: left; /* Centered text/links */
         margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
 }  
@@ -148,55 +146,42 @@ z-index:1;
         position: relative;
         top: 25%; /* 25% from the top */
         left:33%; /* 100% width */
-        text-align: center; /* Centered text/links */
+        text-align: left; /* Centered text/links */
         margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
+    
 }
 
 /* Change the color of links on hover */
-
+.overlay-icons{
+    float:left;
+    color:rgb(219, 36, 106);
+    background-color:transparent;
+    cursor:pointer;
+    border-style:none;
+    padding:15px 0px 5px 25px;
+    font-size:28px;
+   }
 .footer{
     content:"";
-    width: 100%;
+    margin-top:100px;
     clear:both;
-    background-color:rgb(51, 51, 51);
-   height:700px;
 }
-.icons{
-    float:left;
-    margin-left:15px;
-    margin-top:12px;
-    /*background-color:rgb(51, 51, 51);*/
-    color:white;
-    cursor:pointer;
-   }
-   .icons_div{
-    position:relative;
-    display:inline-block;
-    top:40%;
-    left:25%;
-    font-size:42px;
-   }
-   ul li{
-       width:50px;
-       height:50px;
-       content:"";
-       background-color:rgb(65, 65, 65);
-       border-radius:100%;
-       float:left;
-       margin-left:50px;
-       box-shadow:none;
-       cursor:pointer;
-   }
+
+  .icons:hover{
+      color:red;
+      font-size: 32px;
+      transition: 0.5s;
+  }
    .links{
-       color:white;
        text-decoration: none;
-       cursor:pointer;
-       position:absolute;
-       font-size:18px;
-       margin-top:10px;
-       margin-left:-13px;
    }
+   .footer_button:hover{
+       color:red;
+       font-size: 32px;
+       transition: 0.5s;
+   }
+   
    /* width */
 ::-webkit-scrollbar {
     width: 7px;
@@ -217,4 +202,7 @@ z-index:1;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(73, 70, 70); 
+}
+#about_photo{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
 }
