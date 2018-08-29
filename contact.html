@@ -6,37 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body style="background-image: url('images/lowpoly.png')">
+    <body style="background-image: url('images/lowpoly.jpg')">
         <div>
             <a href="index.html"><img src="images/newsabranglogo.png" class="logo_size"></a>
-            <div style="display:inline-block;font-size:36px;position:absolute;top:1%;left:50px">
+            <div style="display:inline-block;font-size:36px;position:absolute;top:1%;left:50px;color:white;">
                 Contact Us
             </div>
         </div>
         <!------------------ Menu Icon ---------------->    
     <div class="menu_icon" id="menu">
-        <i class="fa fa-bars ham_icon" onclick="openNav()"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#fff"/>
+        </svg>
     </div>
-    <!------------------- Menu Overlay ---------------->
-    <div id="myNav" class="overlay">
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <!-- Overlay content -->
-    <div class="overlay-content">
+  <!------------------- Menu Overlay ---------------->
+ <div id="myNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+  <div>
+  <div class="overlay-content">
     <a href="index.html">Home</a>
     <a href="events.html">Events</a>
     <a href="#">Competitions</a>
     <a href="#">Team Sabrang</a>
     <a href="contact.html">Contact Us</a>
-    </div> 
-    </div>
+  </div>
+  <div style="display:inline-block;position:absolute;float:left;bottom:0px;left:10px">
+        <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-instagram "></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-youtube"></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-twitter"></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-facebook"></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-linkedin"></i></button></a>
+  </div>
+</div> 
+ </div>
 
-     <div style="display:inline-block;box-shadow: 4px 4px 4px rgb(86, 87, 86);width:60%;background-color: white;color:black;position:relative;left:20%;top:160px;">
-        <h1 style="text-align: center">Contact US</h1>
-        
-     </div>
-
-    </body>
+    <!-- GSAP LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
     <script src="js/index.js"></script>
-
+</body>
 </html>

@@ -35,13 +35,32 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
        <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
         @import url('https://fonts.googleapis.com/css?family=Open+Sans');
         </style> 
-    </head>
+        <script>
+        $(window).on('load',function(){
+    $('.preloader').fadeOut(1500);
+});
+</script>
+      </head>
 
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-image:url('images/crowd-100.jpg');height:100%;width:100%;">
+    <!---------------------- LOADER ------------------>
+    <div class="preloader">  
+        <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" class="loader" xml:space="preserve">
+        
+        <circle class="st0" id ="dot" cx="45.5" cy="156.2" r="29.9"/>
+        <circle class="st0" id ="dot"  cx="115.5" cy="156.2" r="29.9"/>
+        <circle class="st0" id ="dot"  cx="185.5" cy="156.2" r="29.9"/>
+        <circle class="st0" id ="dot"  cx="255.5" cy="156.2" r="29.9"/>
+        
+        </svg>
+    </div>
+    <!------------------- LOADER ------------------>
+
     <!---------------- Home DIV---------------->
     <div id="home_window" style="margin:auto;background-image:url('images/lowpoly.jpg');background-repeat:round" class="home_div">
         <div id="particles-js"></div>
@@ -56,8 +75,8 @@
             <circle id="scroll_dot" class="cls-1" cx="24.5" cy="27" r="5"/></g></svg></center>    
             <center style="color:white;margin-top:2%;">SCROLL DOWN</center>
         </div>
-
-         <!------------------ Menu Icon ---------------->    
+         <!------------------ Menu Icon ---------------->   
+          
     <div class="menu_icon" id="menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
                 <path d="M0 0h24v24H0z" fill="none"/>
@@ -250,15 +269,15 @@
 </div>
 
     <!-- GSAP LIBRARIES -->
+
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
  <script src="js/carousel.js"></script>
  <script src="js/index.js"></script> 
 
-<!--Partice.js-->
+<!--Particles.js-->
  <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
 <!--WOW.js-->
