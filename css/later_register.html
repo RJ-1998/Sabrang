@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Register|Sabrang|JKLU</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="css/media_queries.css">
+        <link rel="stylesheet" href="css/sabrang.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
+    body{
+        background-image: url('images/lowpoly.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+        height:100%;
+        font-family: 'Roboto Mono', monospace;
+    }
+    .header{
+        display:inline-block;
+        font-size:28px;
+        position:absolute;
+        top:1%;
+        left:50px;
+        color:white;
+    }
+</style>
+    </head>
+    <body>
+        <div>
+            <a href="index.html"><img src="images/newsabranglogo.png" class="logo_size"></a>
+            <div class="header">
+                Registration
+            </div>
+        </div>
+            <!------------------ Menu Icon ---------------->    
+    <div class="menu_icon" id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#fff"/>
+    </svg>
+        </div>
+      <!------------------- Menu Overlay ---------------->
+     <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="#">Competitions</a>
+        <a href="#">Schedule</a>
+        <a href="contact.html">Contact Us</a>
+      </div> 
+      <div style="display:inline-block;position:absolute;float:left;bottom:0px;left:10px">
+        <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-instagram "></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-youtube"></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-twitter"></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-facebook"></i></button></a>
+   <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-linkedin"></i></button></a>
+  </div>
+     </div>
+        <div class="div1">
+         <form>
+             <center style="color:white;font-size:20px;margin-bottom:20px;">Register Yourself</center>
+            <!--TODO styling of event list -->
+             <!--<input type="text" placeholder="Event Name" name="event" class="textfield">-->
+             <span style="color:white;font-size:20px;margin-right:5px">Select Event</span>
+            <select name="event" style="width:60%;height:24px;font-size:18px">
+                <option value="Aaja_Nachle">Aaja Nachle</option>
+                <option value="Aaroh_avroh">Aaroh Avroh</option>
+                <option value="Band_jam">Band Jam</option>
+                <option value="Beat_boxing">Beat Boxing</option>
+                <option value="Block_beast">Block Beast</option>
+                <option value="Body_art">Body Art</option>
+                <option value="Bridge_design">Bridge Design</option>
+                <option value="Bulls_and_bear">Bulls & Bear</option>
+                <option value="C_debugging">C Debugging</option>
+                <option value="Fashion_show">Fasion Show</option>
+                <option value="Java_debugging">Java Debugging</option>
+                <option value="junkyard">Junkyard</option>
+                <option value="Model_presentation">Model Presentation</option>
+                <option value="Poetry">Poetry</option>
+                <option value="Pratiroop">Pratiroop</option>
+                <option value="Pratibha">Pratibha</option>
+                <option value="Rangmanch">Rangmanch</option>
+                <option value="Rangoli">Rangoli</option>
+                <option value="Rap_war">Rap War</option>
+                <option value="Treasure Hunt">Treasure Hunt</option>
+            </select>
+            <!-- TODO Styling of radio buttons--></br>
+            <div style="margin-top:4%;margin-bottom:4%;color:white;">
+            <input type="radio" name="category" value="solo" checked id="category">Solo
+            <input type="radio" name="category" value="duet" id="category">Duet
+            <input type="radio" name="category" value="team" id="category">Team
+            </div>  
+            <input type="number" placeholder="Number of Teammates(including team leader)" name="teammates" class="textfield" style="display:none" id="teammates" required>
+            <input type="text" placeholder="Name of Your Team(if any)" name="teamname" class="textfield" style="display:none" id="teamname" required>
+
+            <input type="text" placeholder="Name" name="name" class="textfield" id="leader" required>
+            <input type="text" placeholder="College" name="college" class="textfield" required>
+            <input type="email" placeholder="Email" name="email" class="textfield" required>
+            <input type="tel" placeholder="First Phone Number" name="phone1" class="textfield" id="firstPhone" required>
+            <input type="tel" placeholder="Second Phone Number" name="phone2" class="textfield" id="secondPhone" required>
+            <!-- TODO styleing of Hospitality -->
+            </br>
+            <label style="color:white;font-size:18px;margin-bottom:2%">Hospitality</label>
+            </br>
+            <div style="color:white;font-size:18px;margin-top:2%;">
+            <input type="radio" name="hospitality" value="yes" id="hospitality">Yes
+            <input type="radio" name="hospitality" value="no" id="hospitality" checked>No 
+            </div>
+            </br>
+            <input type="number" placeholder="Number of participants" name="hospitality" class="textfield" style="display:none;" id="hospitality_info" required>
+            <input type="tel" placeholder="Conatct Number" name="contact" class="textfield" style="display:none;" id="hospitality_info" required>
+            <input type="submit" value="REGISTER" name="register" class="submitButton">
+            </br>
+            <center style="margin-top:20px;color:white;font-size:14px">
+                Facing Some Problem?</br>Drop an E-mail</br>
+                blablabla@jklu.edu.in
+            </center>
+         </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/ScrollToPlugin.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/register.js"></script> 
+    </body>
+</html>

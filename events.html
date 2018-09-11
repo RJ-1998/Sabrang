@@ -1,19 +1,33 @@
 <html>
     <head>
-<title> Events|Sabrang|JKLU</title>
+<title>Events | Sabrang 2018 | Techno-Management-Cultural Fest</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">       
 <link rel="stylesheet" href="css/events.css">
 <link rel="stylesheet" href="css/media_queries.css">
 <link rel="stylesheet" href="css/sabrang.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="theme-color" content="#2d1924"><!--theme color-->
+<link rel="icon" type="image/png" href="favicon.png" sizes="any"><!--Favicon-->
+
 
 <style>
      body{
         
-        background-image: url('images/events_back 18.jpg');
+        background-image: url('images/newback.jpg');
         background-repeat:round;
         background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+        /*background-image: linear-gradient(-30deg, #a08300 10%, #a30031 90%);*/
+        color: white;
+        /*opacity: 0.95;*/
+        background-repeat:round;
+        background-attachment: fixed;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
      }
      .details{
          text-align: center;
@@ -32,15 +46,15 @@
     </head>
    <body>
         <div style="float:left;">
-           <a href="index.html"><img src="images/newsabranglogo.png" class="logo_size"></a>
-           <div style="color:white;position:absolute;top:1%;left:50px;font-size:36px;display:inline-block">
-               Events
-           </div>
+           <a href="index.html"><img src="images/newsabranglogo.png" class="logo_size" style="position: fixed;z-index: 1;top:2%;"></a>
        </div>
+       <div class="event_text">
+        Events
+    </div>
 
 <!------------------ Menu Icon ---------------->    
-<div class="menu_icon" id="menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
+<div class="menu_icon" id="menu" style="position:fixed;z-index: 1;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ham_icon" onclick="openNav()">
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#fff"/>
         </svg>
@@ -48,39 +62,63 @@
 <!------------------- Menu Overlay ---------------->
 <div id="myNav" class="overlay">
 <!-- Button to close the overlay navigation -->
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a class="closebtn" onclick="closeNav()">&times;</a>
 <!-- Overlay content -->
 <div>
         <div class="overlay-content">
           <a href="index.html">Home</a>
           <a href="events.html">Events</a>
-          <a href="#">Competitions</a>
-          <a href="#">Team Sabrang</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="register.html">Register</a>
           <a href="contact.html">Contact Us</a>
         </div>
         <div style="display:inline-block;position:absolute;float:left;bottom:0px;left:10px">
-              <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-instagram "></i></button></a>
+         <a href="https://www.instagram.com/jklusabrang" target="_blank"><button type="button" class="overlay-icons"><i class="fa fa-instagram "></i></button></a>
          <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-youtube"></i></button></a>
-         <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-twitter"></i></button></a>
-         <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-facebook"></i></button></a>
+         <a href="https://twitter.com/sabrang_jklu" target="_blank"><button type="button" class="overlay-icons"><i class="fa fa-twitter"></i></button></a>
+         <a href="https://www.facebook.com/sabrang.jklu" target="_blank"><button type="button" class="overlay-icons"><i class="fa fa-facebook"></i></button></a>
          <a href="#"><button type="button" class="overlay-icons"><i class="fa fa-linkedin"></i></button></a>
         </div>
       </div> 
 </div>
 
-       <div class="event_card wow fadeInUp">
-        <img src="images/fashion 18.JPG" width="100%" height="100%">
-        <div style="padding:10px;text-align:justify;color:white;position:absolute;bottom:0px;">
+       <div class="event_card wow zoomIn">
+        <img src="images/Aaroh-Avroh.jpg" width="100%" height="100%">
+        <div class="about_event">
             <h1 style="display:inline;padding:8px;">
-                Fashion Show
+                Aaroh Avroh
             </h1>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis. 
-                Quae saepe dolore earum consequatur iusto ipsum porro, 
-                unde natus adipisci quia tempora architecto, maiores quos omnis blanditiis sed modi.
+                Let your inner singer come out with Aaroh Avroh.
+                It is a singing competition where you can perform either solo or duet.
+                The stage is set for the melodious showstoppers 
+                to gear up their “sur and taal” in front of a capacity crowd. 
             </p>
             <button type="button" class="button2">Register Now!</button>
-            <button type="button" class="details" id="id1">View details</button>
+            <button type="button" class="details" id="id1" style="display:none">View details</button>
+            <div style="display:none">
+                <div class="mobile_hide_image">
+                 <img src="images/lowpoly_rotate.png" width="90%" height="100%">
+                </div>
+                </div>
+            </div>     
+       </div>
+
+       <div class="event_card wow zoomIn">
+        <img src="images/Aaja-Nachle.jpg" width="100%" height="100%">
+        <div class="about_event">
+            <h1 style="display:inline;padding:8px;">
+                Aaja Nachle
+            </h1>
+            <p>
+                Ain’t that right? No matter who watches, just dance and let
+                 your soul be free, entering a state of pure ecstasy.The 
+                 inter-collegiate group dance competition is a platform for
+                  the best dancing troops across India to flaunt their hypnotic moves.
+                   
+            </p>
+            <button type="button" class="button2">Register Now!</button>
+            <button type="button" class="details" id="id1" style="display:none">View details</button>
             <div style="display:none">
                 <div>
                  <img src="images/lowpoly_rotate.png" width="90%" height="100%">
@@ -99,28 +137,26 @@
                         <li>jndsnks</li>
                         <li>sbdsnjsn</li>
                     </ul>    
-                    <button type="button" class="button2">Register Now</button>
-                    <button  id="id4" type="button" 
-                    onclick="document.getElementById('id2').style.display = 'none' " 
-                    class="button2">Cancel</button>
+                    <a id="id4" class="closebtn2" onclick="document.getElementById('id2').style.display = 'none' ">&times;</a>
                 </div>
                 </div>
             </div>     
        </div>
 
-       <div class="event_card wow fadeInUp">
-        <img src="images/bandjam 18.JPG" width="100%" height="100%">
-        <div style="padding:10px;text-align:justify;color:white;position:absolute;bottom:0px;">
+       <div class="event_card wow zoomIn">
+        <img src="images/bandjam-18.jpg" width="100%" height="100%">
+        <div class="about_event">
             <h1 style="display:inline;padding:8px;">
-                Fashion Show
+                Swar Bandish
             </h1>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis. 
-                Quae saepe dolore earum consequatur iusto ipsum porro, 
-                unde natus adipisci quia tempora architecto, maiores quos omnis blanditiis sed modi.
+                Rock and roll on the beats of bands.
+                An opportunity for upcoming bands to showcase their original 
+                composition across various genres, such as rock, metal, jazz, 
+                pop, sufi etc. making it a musical "Clash of the Titans". 
             </p>
             <button type="button" class="button2">Register Now!</button>
-            <button type="button" class="details" id="id1">View details</button>
+            <button type="button" class="details" id="id1" style="display:none">View details</button>
             <div style="display:none">
                 <div>
                  <img src="images/lowpoly_rotate.png" width="90%" height="100%">
@@ -139,56 +175,79 @@
                         <li>jndsnks</li>
                         <li>sbdsnjsn</li>
                     </ul>    
-                    <button type="button" class="button2">Register Now</button>
-                    <button  id="id4" type="button" 
-                    onclick="document.getElementById('id2').style.display = 'none' " 
-                    class="button2">Cancel</button>
+                    <a id="id4" class="closebtn2" onclick="document.getElementById('id2').style.display = 'none' ">&times;</a>
                 </div>
                 </div>
             </div>     
        </div>
 
-       <div class="event_card wow fadeInUp">
-        <img src="images/solodance 18.JPG" width="100%" height="100%">
-        <div style="padding:10px;text-align:justify;color:white;position:absolute;bottom:0px;">
-            <h1 style="display:inline;padding:8px;">
-                Fashion Show
-            </h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, perspiciatis. 
-                Quae saepe dolore earum consequatur iusto ipsum porro, 
-                unde natus adipisci quia tempora architecto, maiores quos omnis blanditiis sed modi.
-            </p>
-            <button type="button" class="button2">Register Now!</button>
-            <button type="button" class="details" id="id1">View details</button>
-            <div style="display:none">
-                <div>
-                 <img src="images/lowpoly_rotate.png" width="90%" height="100%">
-                </div>
-                <div>
+       <div class="event_card wow zoomIn">
+            <img src="images/Pratiroop.jpg" width="100%" height="100%">
+            <div class="about_event">
+                <h1 style="display:inline;padding:8px;">
+                    Paridhan
+                </h1>
+                <p>
+                    Walk like model,behave like superstar.
+                    Here's coming up the most loved event THE FASHION SHOW where you can
+                    showcase your inner style and prestige. The teams can showcase their 
+                    performance (style, costumes, presentation) on the given theme.
+                </p>
+                <button type="button" class="button2">Register Now!</button>
+                <button type="button" class="details" id="id1" style="display:none">View details</button>
+                <div style="display:none">
+                    <div class="mobile_hide_image">
+                     <img src="images/lowpoly_rotate.png" width="90%" height="100%">
+                    </div>
+                    </div>
+                </div>     
+           </div>
+
+           <div class="event_card wow zoomIn">
+                <img src="images/Pratibha.jpg" width="100%" height="100%">
+                <div class="about_event">
+                    <h1 style="display:inline;padding:8px;">
+                        Pratibha
+                    </h1>
                     <p>
-                        RULES<br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Exercitationem, temporibus? Error, 
-                    tempore nobis excepturi placeat quaerat hic deserunt 
-                    voluptatum quod laudantium enim, architecto pariatur 
-                    facere rerum eius accusamus iste magnam?
-                   </p>
-                    <ul>
-                        <li>hdddn</li>
-                        <li>jndsnks</li>
-                        <li>sbdsnjsn</li>
-                    </ul>    
-                    <button type="button" class="button2">Register Now</button>
-                    <button  id="id4" type="button" 
-                    onclick="document.getElementById('id2').style.display = 'none' " 
-                    class="button2">Cancel</button>
-                </div>
-                </div>
-            </div>     
-       </div>
-
-
+                        Everyone has an inner artist which has to come out one or the other day.
+                        That's we give you a chance to take that artist out with THE TALENT SHOW.Here 
+                        participants perform talents across Mimicry, Extempore or Stand-up Comedy to win.
+                    </p>
+                    <button type="button" class="button2">Register Now!</button>
+                    <button type="button" class="details" id="id1" style="display:none">View details</button>
+                    <div style="display:none">
+                        <div class="mobile_hide_image">
+                         <img src="images/lowpoly_rotate.png" width="90%" height="100%">
+                        </div>
+                        </div>
+                    </div>     
+               </div>   
+               
+               <div class="event_card wow zoomIn">
+                    <img src="images/Rangmanch.jpg" width="100%" height="100%">
+                    <div class="about_event">
+                        <h1 style="display:inline;padding:8px;">
+                            Rangmanch
+                        </h1>
+                        <p>
+                                Actions speak louder than words will just not remain a quote, 
+                                the spectators and audience will see it on their own, and applaud 
+                                its rise as well. Come with your ideas in form of action on stage, 
+                                give and share a moment of laughter, a sigh of relief, a sob of sorrow. 
+                        </p>
+                        <button type="button" class="button2">Register Now!</button>
+                        <button type="button" class="details" id="id1" style="display:none">View details</button>
+                        <div style="display:none">
+                            <div class="mobile_hide_image">
+                             <img src="images/lowpoly_rotate.png" width="90%" height="100%">
+                            </div>
+                            </div>
+                        </div>     
+                   </div>
+         <div style="margin-top:80px">
+             <h3 style="color:white;font-family: 'Roboto Mono', monospace;"><center>Designed By Team Sabrang</center></h3>
+         </div>
         <div id="id2" class="modal">
            <div id="id5" class="split left" style="margin-left:20%;width:30%"></div>
            <div id="id3" class="split right" style="margin-right:14%;width:40%">ff</div>
@@ -205,7 +264,7 @@
    </script>
    
    <script>
-   const details = document.querySelectorAll('#id1');
+/*   const details = document.querySelectorAll('#id1');
    const div2 = document.querySelector('#id2');
    const div3 = document.querySelector('#id3');
    const div5 = document.querySelector('#id5');
@@ -216,7 +275,60 @@
            div3.innerHTML=el.target.nextElementSibling.lastElementChild.innerHTML;
            div2.style.display = "inline-block";
        });
-   });
+   });*/
    </script>
     
 </html>
+<!--
+<div>
+        <h3 style="position:sticky;top:0px;font-size:24px;background-color:rgb(235, 235, 235)"><center>Block Beast</center></h3>
+        <p style="margin:5px;">
+                The problem statement demands a greater mutual understanding between the team members. 
+                Gameplay will consist of a manually controlled bot which can do simple tasks of gripping
+                blocks & transporting them into their respective areas and complete the run by earning
+                maximum points in minimum time.
+        </p>   
+        <h4 style="margin:5px;">Event Structure</h4>
+        <ul>
+            <li>Match duration: 5-7 minutes.</li>
+            <li>Bot setup time: 60 seconds.</li>
+            <li>During the match only two team-members will participate in competition, 
+            one member will control the bot and the other member will guide the other one 
+            about the arena. Teams can switch members in different matches.</li>
+            <li>The game will be started once the team(s) arrives at the event venue after registering themselves.</li>
+            <li>Announcement of the results will be on the same day of the event.</li>
+            <li>Winning criteria: The winner will be decided by the final points 
+            (points are earned by grasping and placing the blocks/shapes into their 
+            respective areas while completing the track, point system will be briefly described in the Scoring section).</li> 
+        </ul>
+        <h4 style="margin:5px;">General Rules</h4>
+        <ul>
+                <li>Each team can have a maximum of 4 participants and minimum of 2.</li>
+                <li>A team may consist of students from different colleges.</li>
+                <li>The robots will be inspected before the event. Failing the inspection shall lead to disqualification.</li>
+                <li>No damage should be made by a bot to the arena or to other team’s bots during the match in any manner.</li>
+                <li>Bots should not be disassembled until the results are declared.</li>
+                <li>The organizers reserve the right to change the rules and/or arena as they deem fit.</li>
+                <li>When a team is called for a match, they must report within five minutes.</li>
+                <li>Judges/Manager's decision will be final.</li>
+        </ul>
+        <h4 style="margin:5px;">Bot Specifications</h4>
+        <ul>
+            <li>During the whole event, both the bots must fit within a cuboid of 380x300x300 [(l x w x h) in mm] 
+                failing which the teams will be disqualified.</li>
+            <li>Flippers, grippers and other mechanisms (if any) should be well within the given dimensions.</li>
+            <li>The Robot must be stable and able to move on its own. A Bot that does not fulfil these criteria will be disqualified.</li>
+            <li>The wire used to power/feed the bot should remain slack always.</li>
+            <li>Each team must bring its own power supply for the Bots.</li>
+            <li>Only onboard power supply is permissible.</li>
+            <li>The charging points will be provided by the hosts to the participants to charge their bot’s batteries.</li>
+            <li>The voltage difference between any two points on the Bot must not exceed 24 volts.</li>
+            <li>Pneumatic/Hydraulic/Cutter/Projectile/Entanglement mechanisms are NOT allowed.</li>
+            <li>Wireless Control - If you are using a home built control system, or a control system not 
+                commercially available, you must first clear it with the Managers.</li>
+        </ul>
+        <span style="margin:5px;">Maximum teams from an Institute: 03 (Three)</span><br>
+        <span style="margin:5px;">Registration Fees: INR 200/Team (To be submitted to the Event Registration desk)</span><br>
+        <span style="margin:5px;">Minimum Teams criteria for validation of cash prize: 03(Three)</span><br>
+        <a id="id4" class="closebtn2" onclick="document.getElementById('id2').style.display = 'none' ">&times;</a>
+    </div>-->

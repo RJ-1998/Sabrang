@@ -2,6 +2,21 @@
  
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
+	.register_text{
+		position: absolute;
+		top:2%;
+		right:2%;
+		z-index:1;
+		border-style: none;
+		box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+		padding:8px;
+		background-color:rgb(219, 36, 106);
+		cursor:pointer;
+		color:white;
+		font-size:16px;
+		text-decoration:none;
+		font-family: 'Roboto Mono', monospace;
+		}
 	.logo_size{
 		position:absolute;
 		right:20px;
@@ -29,6 +44,8 @@
 	}
 	.ham_icon{
 		padding:10px;
+		height:36px;
+		width:36px;
 	 }
 .menu_icon
 {
@@ -106,10 +123,40 @@
 	position:relative;
 	left:20%;
 }
+
+.overlay-icons{
+    float:left;
+    color:rgb(219, 36, 106);
+    background-color:transparent;
+    cursor:pointer;
+    border-style:none;
+    font-size:28px;
+   }
+   .sabrang_date{
+	position:absolute;
+	left:10%;
+	top:12%;
+}
+.sabrang_countdown{
+	position:absolute;
+	left:14%;
+	top:50%;
+}
+#mobile_hide{
+	display:none;
+}
+.footer_sabrang_logo{
+	float:left;
+	margin-left:35%;
+	margin-top:10%;
+	margin-bottom:10%;
+	width:30%;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px){
+	
 	.logo_size{
 		position:absolute;right:20px;
         width:10%;
@@ -150,6 +197,7 @@
 	}	
 	.ham_icon{
 		padding:20px;
+
 	 }
 	.menu_icon
 	{
@@ -161,6 +209,13 @@
 		top:250px;
 		cursor:pointer;
 	}
+	.overlay-icons-div{
+        display:inline-block;
+        position:absolute;
+        float:left;
+        bottom:0px;
+        left:10px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -187,7 +242,8 @@
 	
 	.ham_icon{
 		padding:20px;
-		
+		widows: 48px;
+		height:48px;
 	 }
 	.menu_icon
 	{
@@ -263,10 +319,29 @@
 		margin:0px 1px 0px 1px;
 		background-color:rgba(0, 0, 0, 0.1);
 		color:white;
+		font-family: 'Roboto Mono', monospace;
 	}
 	#footer-links{
 		float:left;
 		position:relative;
 		margin:20px 0px 0px 130px;
+	}
+	.sabrang_date{
+		position:absolute;
+		left:50%;
+		transform:translate(-50%,-50%);
+		top:17%;
+	}
+	.sabrang_countdown{
+		position:absolute;
+		/*left:42%;*/
+		left:50%;
+		transform:translate(-50%,-50%);
+		top:71%;
+	}
+	.footer_sabrang_logo{
+		float:left;
+		margin:30px;
+		width:10%;
 	}
 }

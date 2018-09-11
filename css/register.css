@@ -81,10 +81,10 @@ margin-left:35%;
 color:white;
 }
 .div1{
-    float:right;
+    float:left;
     position: relative;;
-    top:200px;
-    right:2%;
+    top:80px;
+    left:28%;
     background-color:rgba(0,0,0,40%);
     padding:20px 10px 20px 10px;
     width:50%;
@@ -113,10 +113,10 @@ color:white;
         color:white;
         }
         .div1{
-            float:right;
+            float:left;
             position: relative;;
-            top:140px;
-            right:2%;
+            top:80px;
+            left:28%;
             background-color:rgba(0,0,0,40%);
             padding:20px 10px 20px 10px;
             width:50%;
