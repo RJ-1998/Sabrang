@@ -2,7 +2,7 @@
 @media only screen and (max-width:480px){
     
     .div1{
-        display:inline-block;
+        display:none;
         margin-top:20%;
         background-color:rgba(0,0,0,40%);
         padding:20px 10px 20px 10px;
@@ -26,6 +26,7 @@ padding:10px;
 margin-top:20px;
 margin-left:30%;
 color:white;
+cursor:pointer;
 }
 }
 @media only screen and (min-width:481px) and (max-width:768px){
@@ -49,9 +50,10 @@ padding:10px;
 margin-top:20px;
 margin-left:35%;
 color:white;
+cursor:pointer;
 }
 .div1{
-    display:inline-block;
+    display:none;
     margin-top:15%;
     background-color:rgba(0,0,0,40%);
     padding:20px 10px 20px 10px;
@@ -79,8 +81,10 @@ padding:10px;
 margin-top:20px;
 margin-left:35%;
 color:white;
+cursor:pointer;
 }
 .div1{
+    display:none;
     float:left;
     position: relative;;
     top:80px;
@@ -111,8 +115,10 @@ color:white;
         margin-top:20px;
         margin-left:35%;
         color:white;
+        cursor:pointer;
         }
         .div1{
+            display:none;
             float:left;
             position: relative;;
             top:80px;
